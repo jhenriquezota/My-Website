@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .projects,
+    .skills,
+    .contact-section {
+        background: #3218c9;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 1 4px 8px rgb(240, 242, 247);
+    }
+    
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    
+    .project {
+        background: #f0eff5;
+        padding: 1rem;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+    
+    .project:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+<body>
+    <section class="projects">
+        <h2>Work</h2>
+        <div class="project">Portfolio Website</div>
+        <div class="project">To-Do App</div>
+        <div class="project">Weather Dashboard</div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fas fa-code"></i> HTML, CSS, JS</li>
+            <li><i class="fas fa-mobile"></i> Responsive Design</li>
+            <li><i class="fas fa-tools"></i> Git & Deployment</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
